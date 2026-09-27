@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg-obsidian: #02040a;
+  --bg-night: #070e1b;
+  --accent-cyan: #00e5ff;
+  --accent-purple: #6d28d9;
+  --accent-pink: #c084fc;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #02040a;
+  color: #f8fafc;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Refined scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #02040a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+
+/* Pillar breathing glow */
+@keyframes pillarBreathe {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+/* Text selection */
+::selection {
+  background: rgba(0, 229, 255, 0.2);
+  color: #e2e8f0;
+}
